@@ -1,7 +1,7 @@
 import cards_sorting
 import openapi
 
-type_list=['散牌', '一对', '二对', '连对', '三条', '顺子', '同花', '葫芦', '炸弹', '同花顺']
+type_list = ['散牌', '一对', '二对', '连对', '三条', '顺子', '同花', '葫芦', '炸弹', '同花顺']
 or_list = []
 or_list2 = []
 or_list3 = []
@@ -19,12 +19,12 @@ def change_and_sort_cards(list):
             list[i]=list[i][0]+'12'
         elif list[i][1]=='K':
             list[i]=list[i][0]+'13'
-    list.sort(key=lambda x:int(x[1:]))
+    list.sort(key=lambda x: int(x[1:]))
 
 def rechange(list):
     for i in range(0,13):
         if list[i][1:] == '14':
-            list[i]=list[i][0]+'A'
+            list[i] = list[i][0]+'A'
         elif list[i][1:] == '13':
             list[i] = list[i][0] + 'K'
         elif list[i][1:] == '12':
@@ -41,7 +41,7 @@ def divide_cards1(n, m, begin):
         return
     if m == 1:
         for i in range(begin, begin+n):
-            list1[5 - m] = or_list[i]
+            list1[5-m] = or_list[i]
             or_list2 = or_list.copy()
             for j in range(0, 5):
                 or_list2.remove(list1[j])
@@ -82,7 +82,7 @@ def divide_cards2(n,m,begin):
 
 def cards_type(list):
     global type_list
-    types=[None]*3
+    types = [None]*3
     for i in range(0, 3):
         types[i] = type_list[int(list[i])-1]
     return types
