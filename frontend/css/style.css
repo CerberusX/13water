@@ -1,0 +1,1349 @@
+body {
+  margin: 0px;
+  /*background: url("img/bg.png");*/
+}
+
+#web_bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  min-width: 1000px;
+  z-index: -10;
+  zoom: 1;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-position: center 0;
+}
+
+#paidui {
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 90px;
+  height: 127px;
+  /*display: none;*/
+  /*overflow: hidden;*/
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+  z-index: 9998;
+}
+
+.pukepai {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#startgame {
+
+  cursor: pointer;
+  position: relative;
+  height: 41px;
+  width: 200px;
+  /*border: white dashed 1px;*/
+  top: -40%;
+  /*left: 0;*/
+  /*transform: translate(-125%, 0);*/
+  transform: translate(-25%, 0);
+  overflow: hidden;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+  z-index: 9999;
+}
+
+.startgame {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.paihangbang_bottom {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  cursor: pointer;
+}
+
+#paihangbang_bottom {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  height: 80px;
+  width: 80px;
+  overflow: hidden;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+  z-index: 999;
+}
+
+#paihangbang {
+  position: absolute;
+  left: 50%;
+  top: 47%;
+  transform: translate(-50%, -50%);
+  width: 883px;
+  height: 619px;
+  /*border: white dashed 1px;*/
+  display: none;
+  z-index: 10000;
+  overflow: hidden;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+}
+
+.paihangbang {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#player_1 {
+  position: absolute;
+  width: 650px;
+  height: 50px;
+  /*border: white 1px solid;*/
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 44.5%;
+}
+
+#id_1 {
+  /*border: white 1px solid;*/
+  position: absolute;
+  width: 100px;
+  height: 30px;
+  left: 16%;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-family: 'Microsoft Yahei';
+  font-size: 25px;
+  color: white;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
+#name_1 {
+  /*border: white 1px solid;*/
+  position: absolute;
+  width: 100px;
+  height: 30px;
+  left: 49%;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-family: 'Microsoft Yahei';
+  font-size: 25px;
+  color: white;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
+#score_1 {
+  /*border: white 1px solid;*/
+  position: absolute;
+  width: 100px;
+  height: 30px;
+  left: 82%;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-family: 'Microsoft Yahei';
+  font-size: 25px;
+  color: white;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
+#player_2 {
+  position: absolute;
+  width: 650px;
+  height: 50px;
+  /*border: white 1px solid;*/
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 55.5%;
+}
+
+#id_2 {
+  /*border: white 1px solid;*/
+  position: absolute;
+  width: 100px;
+  height: 30px;
+  left: 16%;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-family: 'Microsoft Yahei';
+  font-size: 25px;
+  color: white;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
+#name_2 {
+  /*border: white 1px solid;*/
+  position: absolute;
+  width: 100px;
+  height: 30px;
+  left: 49%;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-family: 'Microsoft Yahei';
+  font-size: 25px;
+  color: white;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+
+}
+
+#score_2 {
+  /*border: white 1px solid;*/
+  position: absolute;
+  width: 100px;
+  height: 30px;
+  left: 82%;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-family: 'Microsoft Yahei';
+  font-size: 25px;
+  color: white;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
+#player_3 {
+  position: absolute;
+  width: 650px;
+  height: 50px;
+  /*border: white 1px solid;*/
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 67%;
+}
+
+#id_3 {
+  /*border: white 1px solid;*/
+  position: absolute;
+  width: 100px;
+  height: 30px;
+  left: 16%;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-family: 'Microsoft Yahei';
+  font-size: 25px;
+  color: white;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
+#name_3 {
+  /*border: white 1px solid;*/
+  position: absolute;
+  width: 100px;
+  height: 30px;
+  left: 49%;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-family: 'Microsoft Yahei';
+  font-size: 25px;
+  color: white;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+
+}
+
+#score_3 {
+  /*border: white 1px solid;*/
+  position: absolute;
+  width: 100px;
+  height: 30px;
+  left: 82%;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-family: 'Microsoft Yahei';
+  font-size: 25px;
+  color: white;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
+#player_4 {
+  position: absolute;
+  width: 650px;
+  height: 50px;
+  /*border: white 1px solid;*/
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 78.5%;
+}
+
+#id_4 {
+  /*border: white 1px solid;*/
+  position: absolute;
+  width: 100px;
+  height: 30px;
+  left: 16%;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-family: 'Microsoft Yahei';
+  font-size: 25px;
+  color: white;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
+#name_4 {
+  /*border: white 1px solid;*/
+  position: absolute;
+  width: 100px;
+  height: 30px;
+  left: 49%;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-family: 'Microsoft Yahei';
+  font-size: 25px;
+  color: white;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
+#score_4 {
+  /*border: white 1px solid;*/
+  position: absolute;
+  width: 100px;
+  height: 30px;
+  left: 82%;
+  top: 50%;
+  transform: translate(0, -50%);
+  font-family: 'Microsoft Yahei';
+  font-size: 25px;
+  color: white;
+  overflow: hidden !important;
+  text-overflow: ellipsis !important;
+}
+
+#paihangbang_close {
+  /*border: white 1px dashed;*/
+  position: absolute;
+  right: 4%;
+  top: 17%;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+}
+
+#zhanji {
+  overflow: hidden;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+  position: absolute;
+  top: 5px;
+  right: 100px;
+  height: 80px;
+  width: 80px;
+  z-index: 999;
+}
+
+.zhanji {
+  cursor: pointer;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#zhanjibang {
+  position: absolute;
+  /*width: auto;*/
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 700px;
+  height: 669px;
+  z-index: 10000;
+
+  display: none;
+  /*border: white 1px dashed;*/
+}
+
+.zhanjibang {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#yonghuhao {
+  /*border: white 1px solid;*/
+  border: 0px;
+  width: 100px;
+  height: 25px;
+  position: absolute;
+  left: 45%;
+  top: 16%;
+  display: inline;
+  color: #005e2c;
+}
+
+input::-webkit-input-placeholder {
+  color: #ffffff;
+
+}
+
+input::-ms-input-placeholder {
+  color: #ffffff;
+
+}
+
+#yonghuhao_close {
+  cursor: pointer;
+  /*border: white 1px solid;*/
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  right: 10.3%;
+  top: 5.5%;
+}
+
+#search {
+  cursor: pointer;
+  /*border: white 1px solid;*/
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 60%;
+  top: 16%;
+}
+
+#jilu_1 {
+  cursor: pointer;
+  /*border: white 1px solid;*/
+  width: 550px;
+  height: 100px;
+  position: absolute;
+  top: 28%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+#zhanji_chupai_1 {
+  /*border: white 1px solid;*/
+  width: 400px;
+  height: 100px;
+  position: absolute;
+  right: 0;
+}
+
+#changhao_1 {
+  font-family: 'Microsoft Yahei';
+  text-align: center;
+  text-align: -webkit-center;
+  text-align: -moz-center;
+  font-size: 25px;
+  position: absolute;
+  left: 2.5%;
+  top: 50%;
+  transform: translate(0, -50%);
+  color: #005e2c;
+
+}
+
+#defen_1 {
+  font-family: 'Microsoft Yahei';
+  text-align: center;
+  text-align: -webkit-center;
+  text-align: -moz-center;
+  font-size: 25px;
+  position: absolute;
+  left: 16.75%;
+  top: 50%;
+  transform: translate(0, -50%);
+  color: #005e2c;
+
+}
+
+#jilu_2 {
+  cursor: pointer;
+  /*border: white 1px solid;*/
+  width: 550px;
+  height: 100px;
+  position: absolute;
+  top: 46%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+#zhanji_chupai_2 {
+  /*border: white 1px solid;*/
+  width: 400px;
+  height: 100px;
+  position: absolute;
+  right: 0;
+}
+
+#changhao_2 {
+  font-family: 'Microsoft Yahei';
+  text-align: center;
+  text-align: -webkit-center;
+  text-align: -moz-center;
+  font-size: 25px;
+  position: absolute;
+  left: 2.5%;
+  top: 50%;
+  transform: translate(0, -50%);
+  color: #005e2c;
+
+}
+
+#defen_2 {
+  font-family: 'Microsoft Yahei';
+  text-align: center;
+  text-align: -webkit-center;
+  text-align: -moz-center;
+  font-size: 25px;
+  position: absolute;
+  left: 16.75%;
+  top: 50%;
+  transform: translate(0, -50%);
+  color: #005e2c;
+
+}
+
+#jilu_3 {
+  cursor: pointer;
+  /*border: white 1px solid;*/
+  width: 550px;
+  height: 100px;
+  position: absolute;
+  top: 64%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+#zhanji_chupai_3 {
+  /*border: white 1px solid;*/
+  width: 400px;
+  height: 100px;
+  position: absolute;
+  right: 0;
+
+}
+
+#changhao_3 {
+  font-family: 'Microsoft Yahei';
+  text-align: center;
+  text-align: -webkit-center;
+  text-align: -moz-center;
+  font-size: 25px;
+  position: absolute;
+  left: 2.5%;
+  top: 50%;
+  transform: translate(0, -50%);
+  color: #005e2c;
+
+}
+
+#defen_3 {
+  font-family: 'Microsoft Yahei';
+  text-align: center;
+  text-align: -webkit-center;
+  text-align: -moz-center;
+  font-size: 25px;
+  position: absolute;
+  left: 16.75%;
+  top: 50%;
+  transform: translate(0, -50%);
+  color: #005e2c;
+
+}
+
+#jilu_4 {
+  cursor: pointer;
+  /*border: white 1px solid;*/
+  width: 550px;
+  height: 100px;
+  position: absolute;
+  top: 82%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+#zhanji_chupai_4 {
+  /*border: white 1px solid;*/
+  width: 400px;
+  height: 100px;
+  position: absolute;
+  right: 0;
+
+}
+
+#changhao_4 {
+  font-family: 'Microsoft Yahei';
+  text-align: center;
+  text-align: -webkit-center;
+  text-align: -moz-center;
+  font-size: 25px;
+  position: absolute;
+  left: 2.5%;
+  top: 50%;
+  transform: translate(0, -50%);
+  color: #005e2c;
+
+}
+
+#defen_4 {
+  font-family: 'Microsoft Yahei';
+  text-align: center;
+  text-align: -webkit-center;
+  text-align: -moz-center;
+  font-size: 25px;
+  position: absolute;
+  left: 16.75%;
+  top: 50%;
+  transform: translate(0, -50%);
+  color: #005e2c;
+
+}
+
+#jiesuan {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1100px;
+  height: 637px;
+  z-index: 10001;
+  display: none;
+  /*border: whitesmoke 1px solid;*/
+}
+
+#jschanghao {
+  position: absolute;
+  width: 120px;
+  height: 30px;
+  left: 49%;
+  bottom: 10%;
+  font-family: 'Microsoft Yahei';
+  font-size: 25px;
+  color: #005e2c;
+  /*border: black 1px solid;*/
+}
+
+#jiesuanclose {
+  cursor: pointer;
+  position: absolute;
+  /*border: black 1px solid;*/
+  right: 0.5%;
+  top: 5.5%;
+  width: 60px;
+  height: 60px;
+}
+
+.jiesuanbang {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#yonghu_1 {
+  /*border: white 1px solid;*/
+  position: absolute;
+  width: 220px;
+  height: 500px;
+  top: 16%;
+  left: 8%;
+}
+
+#yonghu_hao_1 {
+  /*border: black 1px solid;*/
+  position: absolute;
+  width: 120px;
+  height: 30px;
+  left: 42%;
+  top: 4.4%;
+  font-family: 'Microsoft Yahei';
+  font-size: 25px;
+  color: #005e2c;
+}
+
+#yonghuming_1 {
+  /*border: black 1px solid;*/
+  position: absolute;
+  width: 120px;
+  height: 30px;
+  left: 42%;
+  top: 12%;
+  font-family: 'Microsoft Yahei';
+  font-size: 25px;
+  color: #005e2c;
+}
+
+#jiesuanfen_1 {
+  /*border: black 1px solid;*/
+  position: absolute;
+  width: 120px;
+  height: 30px;
+  left: 35%;
+  top: 20%;
+  font-family: 'Microsoft Yahei';
+  font-size: 25px;
+  color: #005e2c;
+}
+
+#xiangqing_1 {
+  /*border: black 1px solid;*/
+  position: absolute;
+  width: 200px;
+  height: 350px;
+  left: 1%;
+  top: 28.5%;
+}
+
+#xq1_1 {
+  /*border: black 1px solid;*/
+  position: absolute;
+  width: 130px;
+  height: 100px;
+  left: 1%;
+  top: 1.5%;
+}
+
+#xq1_2 {
+  /*border: black 1px solid;*/
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  left: 1%;
+  top: 25.5%;
+}
+
+#xq1_3 {
+  /*border: black 1px solid;*/
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  left: 1%;
+  top: 49.5%;
+}
+
+#yonghu_2 {
+  /*border: white 1px solid;*/
+  position: absolute;
+  width: 220px;
+  height: 500px;
+  top: 16%;
+  left: 30%;
+}
+
+#yonghu_hao_2 {
+  /*border: black 1px solid;*/
+  position: absolute;
+  width: 120px;
+  height: 30px;
+  left: 42%;
+  top: 4.4%;
+  font-family: 'Microsoft Yahei';
+  font-size: 25px;
+  color: #005e2c;
+}
+
+#yonghuming_2 {
+  /*border: black 1px solid;*/
+  position: absolute;
+  width: 120px;
+  height: 30px;
+  left: 42%;
+  top: 12%;
+  font-family: 'Microsoft Yahei';
+  font-size: 25px;
+  color: #005e2c;
+}
+
+#jiesuanfen_2 {
+  /*border: black 1px solid;*/
+  position: absolute;
+  width: 120px;
+  height: 30px;
+  left: 35%;
+  top: 20%;
+  font-family: 'Microsoft Yahei';
+  font-size: 25px;
+  color: #005e2c;
+}
+
+#xiangqing_2 {
+  /*border: black 1px solid;*/
+  position: absolute;
+  width: 200px;
+  height: 350px;
+  left: 1%;
+  top: 28.5%;
+
+}
+
+#xq2_1 {
+  /*border: black 1px solid;*/
+  position: absolute;
+  width: 130px;
+  height: 100px;
+  left: 1%;
+  top: 1.5%;
+}
+
+#xq2_2 {
+  /*border: black 1px solid;*/
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  left: 1%;
+  top: 25.5%;
+}
+
+#xq2_3 {
+  /*border: black 1px solid;*/
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  left: 1%;
+  top: 49.5%;
+}
+
+#yonghu_3 {
+  /*border: white 1px solid;*/
+  position: absolute;
+  width: 220px;
+  height: 500px;
+  top: 16%;
+  left: 53%;
+}
+
+#yonghu_hao_3 {
+  /*border: black 1px solid;*/
+  position: absolute;
+  width: 120px;
+  height: 30px;
+  left: 42%;
+  top: 4.4%;
+  font-family: 'Microsoft Yahei';
+  font-size: 25px;
+  color: #005e2c;
+}
+
+#yonghuming_3 {
+  /*border: black 1px solid;*/
+  position: absolute;
+  width: 120px;
+  height: 30px;
+  left: 42%;
+  top: 12%;
+  font-family: 'Microsoft Yahei';
+  font-size: 25px;
+  color: #005e2c;
+}
+
+#jiesuanfen_3 {
+  /*border: black 1px solid;*/
+  position: absolute;
+  width: 120px;
+  height: 30px;
+  left: 35%;
+  top: 20%;
+  font-family: 'Microsoft Yahei';
+  font-size: 25px;
+  color: #005e2c;
+}
+
+#xiangqing_3 {
+  /*border: black 1px solid;*/
+  position: absolute;
+  width: 200px;
+  height: 350px;
+  left: 1%;
+  top: 28.5%;
+}
+
+#xq3_1 {
+  /*border: black 1px solid;*/
+  position: absolute;
+  width: 130px;
+  height: 100px;
+  left: 1%;
+  top: 1.5%;
+}
+
+#xq3_2 {
+  /*border: black 1px solid;*/
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  left: 1%;
+  top: 25.5%;
+}
+
+#xq3_3 {
+  /*border: black 1px solid;*/
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  left: 1%;
+  top: 49.5%;
+}
+
+#yonghu_4 {
+  /*border: white 1px solid;*/
+  position: absolute;
+  width: 220px;
+  height: 500px;
+  top: 16%;
+  left: 74.3%;
+}
+
+#yonghu_hao_4 {
+  /*border: black 1px solid;*/
+  position: absolute;
+  width: 120px;
+  height: 30px;
+  left: 42%;
+  top: 4.4%;
+  font-family: 'Microsoft Yahei';
+  font-size: 25px;
+  color: #005e2c;
+}
+
+#yonghuming_4 {
+  /*border: black 1px solid;*/
+  position: absolute;
+  width: 120px;
+  height: 30px;
+  left: 42%;
+  top: 12%;
+  font-family: 'Microsoft Yahei';
+  font-size: 25px;
+  color: #005e2c;
+}
+
+#jiesuanfen_4 {
+  /*border: black 1px solid;*/
+  position: absolute;
+  width: 120px;
+  height: 30px;
+  left: 35%;
+  top: 20%;
+  font-family: 'Microsoft Yahei';
+  font-size: 25px;
+  color: #005e2c;
+}
+
+#xiangqing_4 {
+  /*border: black 1px solid;*/
+  position: absolute;
+  width: 200px;
+  height: 350px;
+  left: 1%;
+  top: 28.5%;
+}
+
+#xq4_1 {
+  /*border: black 1px solid;*/
+  position: absolute;
+  width: 130px;
+  height: 100px;
+  left: 1%;
+  top: 1.5%;
+}
+
+#xq4_2 {
+  /*border: black 1px solid;*/
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  left: 1%;
+  top: 25.5%;
+}
+
+#xq4_3 {
+  /*border: black 1px solid;*/
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  left: 1%;
+  top: 49.5%;
+}
+
+.returnHome {
+
+  position: absolute;
+  top: 5px;
+  left: 25px;
+  height: 80px;
+  width: 80px;
+  /*border: white dashed 1px;*/
+  overflow: hidden;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+
+}
+
+#returnHome {
+
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#BottomChuPai {
+  /*border: white solid 1px;*/
+  width: 150px;
+  height: 53px;
+  cursor: pointer;
+  /*z-index: 99999;*/
+  position: absolute;
+  left: 70%;
+  bottom: 10%;
+  /*right: 0;*/
+  /*transform: translate(-20%, -0%);*/
+  /*right: 50%;*/
+  display: none;
+  overflow: hidden;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+}
+
+/*#bottomChuPai{*/
+/*  position: absolute;*/
+/*  top: 74%;*/
+/*  left: 50%;*/
+/*  transform: translate(-50%,-50%);*/
+/*  height: 53px;*/
+/*  width: 150px;*/
+/*  border: white solid 1px;*/
+/*  cursor: pointer;*/
+/*  !*display: none;*!*/
+/*}*/
+.chupai_bottom {
+  /*cursor: pointer;*/
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  /*  !*border: white solid 1px;*!*/
+}
+
+#first_puke {
+  position: absolute;
+  left: 50%;
+  top: 10px;
+  transform: translate(-50%, -0%);
+  /*border: black dashed 1px;*/
+  width: 579px;
+  height: 141px;
+  overflow: hidden;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+}
+
+#third_puke {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  transform: translate(-50%, -0%);
+  /*border: black dashed 1px;*/
+  width: 579px;
+  height: 141px;
+  /*display: flex;*/
+  /*justify-content: space-around;*/
+  /*align-items: center;*/
+  overflow: hidden;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+}
+
+#second_puke {
+  position: absolute;
+  left: 15%;
+  top: 50%;
+  transform: translate(0%, -50%);
+  /*border: black dashed 1px;*/
+  width: 141px;
+  height: 460px;
+  overflow: hidden;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+}
+
+#forth_puke {
+  position: absolute;
+  right: 15%;
+  top: 50%;
+  transform: translate(0%, -50%);
+  /*border: black dashed 1px;*/
+  width: 141px;
+  height: 460px;
+  overflow: hidden;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+}
+
+/*第一个玩家出牌*/
+
+.first_chupai_1 {
+  position: absolute;
+  left: 50%;
+  top: 0.5%;
+  transform: translate(-50%, -0%);
+  /*border: black dashed 1px;*/
+  width: 180px;
+  height: 141px;
+  overflow: hidden;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+}
+
+.first_chupai_2 {
+  position: absolute;
+  left: 50%;
+  top: 10.5%;
+  transform: translate(-50%, -0%);
+  /*border: black dashed 1px;*/
+  width: 260px;
+  height: 141px;
+  overflow: hidden;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+}
+
+.first_chupai_3 {
+  position: absolute;
+  left: 50%;
+  top: 20.5%;
+  transform: translate(-50%, -0%);
+  /*border: black dashed 1px;*/
+  width: 260px;
+  height: 141px;
+  overflow: hidden;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+}
+
+/*第二个玩家出牌*/
+.second_chupai_1 {
+  position: absolute;
+  left: 13.80%;
+  top: 40%;
+  transform: translate(0%, -50%);
+  /*border: black dashed 1px;*/
+  width: 180px;
+  height: 141px;
+  overflow: hidden;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+}
+
+.second_chupai_2 {
+  position: absolute;
+  left: 11%;
+  top: 50%;
+  transform: translate(0%, -50%);
+  /*border: black dashed 1px;*/
+  width: 260px;
+  height: 141px;
+  overflow: hidden;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+}
+
+.second_chupai_3 {
+  position: absolute;
+  left: 11%;
+  top: 60%;
+  transform: translate(0%, -50%);
+  /*border: black dashed 1px;*/
+  width: 260px;
+  height: 141px;
+  overflow: hidden;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+}
+
+/*第三个玩家的出牌*/
+.third_chupai_1 {
+  position: absolute;
+  left: 50%;
+  bottom: 20.5%;
+  transform: translate(-50%, -0%);
+  /*border: black dashed 1px;*/
+  width: 180px;
+  height: 141px;
+  overflow: hidden;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+}
+
+.third_chupai_2 {
+  position: absolute;
+  left: 50%;
+  bottom: 10.5%;
+  transform: translate(-50%, -0%);
+  /*border: black dashed 1px;*/
+  width: 260px;
+  height: 141px;
+  overflow: hidden;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+}
+
+.third_chupai_3 {
+  position: absolute;
+  left: 50%;
+  bottom: 0.5%;
+  transform: translate(-50%, -0%);
+  /*border: black dashed 1px;*/
+  width: 260px;
+  height: 141px;
+  overflow: hidden;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+}
+
+/*第四个玩家的出牌*/
+.fourth_chupai_1 {
+  position: absolute;
+  right: 13.80%;
+  top: 40%;
+  transform: translate(0%, -50%);
+  /*border: black dashed 1px;*/
+  width: 180px;
+  height: 141px;
+  overflow: hidden;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+}
+
+.fourth_chupai_2 {
+  position: absolute;
+  right: 11%;
+  top: 50%;
+  transform: translate(0%, -50%);
+  /*border: black dashed 1px;*/
+  width: 260px;
+  height: 141px;
+  overflow: hidden;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+}
+
+.fourth_chupai_3 {
+  position: absolute;
+  right: 11%;
+  top: 60%;
+  transform: translate(0%, -50%);
+  /*border: black dashed 1px;*/
+  width: 260px;
+  height: 141px;
+  overflow: hidden;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+}
+
+#touxiang_1 {
+  /*border: black solid 1px;*/
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  left: 23%;
+  top: 0.5%;
+
+}
+
+#touxiang_2 {
+  /*border: black solid 1px;*/
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  left: 3%;
+  top: 40%;
+}
+
+#touxiang_3 {
+  /*border: black solid 1px;*/
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  left: 23%;
+  bottom: 6%;
+}
+
+#touxiang_4 {
+  /*border: black solid 1px;*/
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  right: 3%;
+  top: 40%;
+}
+
+.name {
+  position: absolute;
+  width: 150px;
+  height: 20px;
+  top: 85px;
+  left: 50%;
+  transform: translate(-50%, -0%);
+  /*border: cyan solid 1px;*/
+}

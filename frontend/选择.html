@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选择</title>
+    <style type="text/css">
+        .class1
+        {
+            background-image:url("images/选择.png");
+            background-repeat: no-repeat;
+            background-attachment:fixed;
+            background-size:1350px;
+            background-position:center;
+            background-color:#f6ebd9;
+        }
+        #id{
+            position: fixed;
+            border-color: #965458;
+            border-style: solid;
+            border-width: 1px;
+            background-color: #9C0007;
+            width:210px;
+            hight:110px;
+            border-radius: 6px;
+            margin-top: 255px;
+            margin-left: 655px;
+            -moz-box-shadow:5px 5px 10px #717171;
+            -webkit-box-shadow:5px 5px 10px #717171;
+            box-shadow:5px 5px 10px #717171;
+            text-align: center;
+        }
+        #id:hover{
+            opacity:0.75;
+        }
+        #id:active
+        {
+            opacity:0.75;
+        }
+        #id1{
+            position: fixed;
+            border-color: #965458;
+            border-style: solid;
+            border-width: 1px;
+            background-color: #9C0007;
+            width:210px;
+            hight:110px;
+            border-radius: 6px;
+            margin-top: 360px;
+            margin-left: 655px;
+            -moz-box-shadow:5px 5px 10px #717171;
+            -webkit-box-shadow:5px 5px 10px #717171;
+            box-shadow:5px 5px 10px #717171;
+            text-align: center;
+        }
+        #id1:hover{
+            opacity:0.75;
+        }
+        #id1:active
+        {
+            opacity:0.75;
+        }
+        botton{
+
+            font-family:微软雅黑;
+            font-size:18px;
+            vertical-align: center;
+            line-height:50px;
+            color:#FFFFFF;
+        }
+    </style>
+</head>
+<body class="class1">
+<div id="id" >
+    <botton  onclick="location.href='game.html'">开&nbsp&nbsp始&nbsp&nbsp游&nbsp&nbsp戏</botton>
+</div>
+<div id="id1" >
+    <botton  onclick="f1()" target="_blank">注&nbsp&nbsp销</botton> <!--和注销接口连-->
+</div>
+</body>
+<script>
+    var token = localStorage.getItem("token");
+    function f1() {
+        var data = null;
+        var xhr = new XMLHttpRequest();
+        xhr.addEventListener("readystatechange", function ()
+        {
+            if (this.readyState === this.DONE) {
+                console.log(this.responseText);
+                var JsonObject = JSON.parse(this.responseText);
+                if (JsonObject.status == 0)
+                {
+                    alert("注销成功");
+                    window.location.href = '开始游戏.html';
+                }else
+                    alert(JsonObject.status);
+            }
+        });
+        xhr.open("POST", "http://api.revth.com/auth/logout");
+        xhr.setRequestHeader("x-auth-token",token);
+        xhr.send(data);
+    }
+</script>
+</html>

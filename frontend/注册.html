@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+<style type="text/css">
+    .class1{
+        background-image: url("images/登录.png");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100%;
+        background-position: center;
+        background-color: #f6ebd9;}
+    #id1
+    {
+        position: fixed;
+        border-color:#f0ebe7;
+        border-style: solid;
+        border-width: 1px;
+        background-color: rgba(255, 244, 226, 0);
+        width:310px;
+        height:350px;
+        border-radius: 6px;
+        margin-top: 250px;
+        margin-left: 600px;
+        -moz-box-shadow:5px 5px 10px #717171;
+        -webkit-box-shadow:5px 5px 10px #717171;
+        box-shadow:5px 5px 10px #717171;
+        text-align: center;
+    }
+    #id2{
+        position: fixed;
+        margin-top: 290px;
+        margin-left: 750px;
+    }
+    #a1{
+        position: fixed;
+        font-size: 16px;
+        margin-left: -100px;
+        font-family: 微软雅黑;
+    }
+    #a1:hover
+    {
+        color: #9C0007;
+    }
+    #a2{
+        position: fixed;
+        font-size: 16px;
+        color: #000000;
+        text-decoration: none;
+        font-family: 微软雅黑;
+        margin-left: -30px;
+    }
+    #a2:hover
+    {
+        color: #9C0007;
+    }
+    #i4{
+        position: fixed;
+        margin-left: 650px;
+        margin-top:350px;
+    }
+    #i1{
+        position: fixed;
+        margin-top:-15px;
+        margin-left: 1px;
+        width: 206px;
+        height:30px;
+        border-radius: 1px;
+    }
+    #i2{
+        position: fixed;
+        margin-top:37px;
+        margin-left: 1px;
+        width: 206px;
+        height:30px;
+        border-radius: 1px;
+    }
+    #ii3
+    {
+        position: fixed;
+        margin-top:86px;
+        margin-left: 1px;
+        width: 206px;
+        height:30px;
+        border-radius: 1px;
+    }
+    #ii4
+    {
+        position: fixed;
+        margin-top:130px;
+        margin-left: 1px;
+        width: 206px;
+        height:30px;
+        border-radius: 1px;
+    }
+    #i3
+    {
+        position: fixed;
+        background-color: #9C0007;
+        border-color:#965458;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 5px;
+        width: 210px;
+        height: 43px;
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 16px;
+        margin-top:180px;
+        margin-left: 1px;
+        -moz-box-shadow:5px 5px 10px #717171;
+        -webkit-box-shadow:5px 5px 10px #717171;
+        box-shadow:5px 5px 10px #717171;
+        text-align: center;
+    }
+    #i3:hover{
+        opacity: 0.75;
+    }
+    #a3{
+        position: fixed;
+        margin-top:258px;
+        margin-left: 885px;
+    }
+</style>
+</head>
+<body class="class1">
+<div id="id1">
+    <p></p>
+</div>
+<div id="id2">
+    <a id="a1" href="登入.html"><b>登入</b></a>
+    <a id="a2"><b>注册</b></a>
+</div>
+<div id="i4">
+    <input id="i1" type="text" placeholder="请输入用户名">
+    <input id="i2" type="password" placeholder="请输入密码">
+    <input id="ii3" type="text" placeholder="请输入学号">
+    <input id="ii4" type="password" placeholder="请输入教务处密码">
+    <input id="i3" type="button" value="立即注册" onclick="t1()"> <!--onclick用来和js联系-->
+</div>
+<a id="a3" href="菜单.html" target="_blank">
+    <input  type="image" width="15px" src="images/返回.png">
+</a>
+<script>
+	var username=document.getElementById("i1");
+    var password=document.getElementById("i2");
+	function t1()
+	{
+		var data = JSON.stringify({
+			"username": username.value,
+			"password": password.value,
+			"student_number": document.getElementById("ii3").value,
+			"student_password" :document.getElementById("ii4").value
+		});
+		if (username.value == "" ||password.value == "" )
+		{
+			alert("请输入用户名或密码");
+			return ;
+		}
+		if(document.getElementById("ii3").value==""||document.getElementById("ii4").value=="")
+		{
+			alert("请输入学号或教务处密码");
+			return ;
+		}
+		var xhr = new XMLHttpRequest();
+		//xhr.withCredentials = true;
+		xhr.addEventListener("readystatechange", function () {
+		if (this.readyState === this.DONE) {
+			console.log(this.responseText);
+			var JsonObj = JSON.parse(this.responseText);
+			if(JsonObj.status==0) alert("注册成功，请登录");
+			else if(JsonObj.status==1001) alert("用户名已被使用");
+			else if(JsonObj.status==1002) alert("学号已绑定");
+			else if(JsonObj.status==1003) alert("教务处认证失败");
+			else
+				alert(JsonObj.status)
+		}
+		});
+		xhr.open("POST", "http://api.revth.com/auth/register2");
+		xhr.setRequestHeader("content-type", "application/json");
+		xhr.send(data);
+    }
+</script>
+</body>
+</html>

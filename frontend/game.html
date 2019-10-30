@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>游戏中</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!--<div class="wrapper">-->
+<!--背景图片-->
+<div id="web_bg" style="background-image: url(img/游戏中.png);"></div>
+<!--    牌堆-->
+<div id="paidui">
+  <img src="img/paibei.png" class="pukepai">
+  <div id="startgame">
+    <img src="img/startgame.png" class="startgame">
+  </div>
+</div>
+<!--排行榜-->
+<div id="paihangbang_bottom">
+  <img src="img/paihangbang.png" class="paihangbang_bottom">
+</div>
+<div id="paihangbang">
+  <img src="img/paihangbang_2.png" class="paihangbang">
+  <!--  <div></div>-->
+  <div id="player_1">
+    <span id="id_1"></span>
+    <span id="name_1"></span>
+    <span id="score_1"></span>
+  </div>
+  <div id="player_2">
+    <span id="id_2"></span>
+    <span id="name_2"></span>
+    <span id="score_2"></span>
+  </div>
+  <div id="player_3">
+    <span id="id_3"></span>
+    <span id="name_3"></span>
+    <span id="score_3"></span>
+  </div>
+  <div id="player_4">
+    <span id="id_4"></span>
+    <span id="name_4"></span>
+    <span id="score_4"></span>
+  </div>
+  <div id="paihangbang_close"></div>
+
+</div>
+<!--战绩榜-->
+<div id="zhanji">
+  <img src="img/lishi.png" class="zhanji">
+</div>
+<div id="zhanjibang">
+  <img src="img/jifen.png" class="zhanjibang">
+  <div id="yonghuhao_close"></div>
+  <div id="search"></div>
+  <input id="yonghuhao" type="text" style="BACKGROUND-COLOR: transparent;font-size: 25px;font-family: 'Microsoft Yahei'"
+         placeholder="输入账号" autocomplete="off"/>
+  <div id="jilu_1">
+    <span id="defen_1"></span>
+    <span id="changhao_1"></span>
+    <div id="zhanji_chupai_1"></div>
+  </div>
+  <div id="jilu_2">
+    <div id="zhanji_chupai_2"></div>
+    <span id="defen_2"></span>
+    <span id="changhao_2"></span>
+  </div>
+
+  <div id="jilu_3">
+    <div id="zhanji_chupai_3"></div>
+    <span id="defen_3"></span>
+    <span id="changhao_3"></span>
+  </div>
+  <div id="jilu_4">
+    <div id="zhanji_chupai_4"></div>
+    <span id="defen_4"></span>
+    <span id="changhao_4"></span>
+  </div>
+</div>
+<!--战局详情-->
+<div id="jiesuan">
+  <span id="jschanghao"></span>
+  <img src="img/jiesuan.png" class="jiesuanbang">
+  <div id="jiesuanclose"></div>
+  <div id="yonghu_1">
+    <span id="yonghu_hao_1"></span>
+    <span id="yonghuming_1"></span>
+    <span id="jiesuanfen_1"></span>
+    <div id="xiangqing_1">
+      <div id="xq1_1"></div>
+      <div id="xq1_2"></div>
+      <div id="xq1_3"></div>
+    </div>
+  </div>
+  <div id="yonghu_2">
+    <span id="yonghu_hao_2"></span>
+    <span id="yonghuming_2"></span>
+    <span id="jiesuanfen_2"></span>
+    <div id="xiangqing_2">
+      <div id="xq2_1"></div>
+      <div id="xq2_2"></div>
+      <div id="xq2_3"></div>
+    </div>
+  </div>
+  <div id="yonghu_3">
+    <span id="yonghu_hao_3"></span>
+    <span id="yonghuming_3"></span>
+    <span id="jiesuanfen_3"></span>
+    <div id="xiangqing_3">
+      <div id="xq3_1"></div>
+      <div id="xq3_2"></div>
+      <div id="xq3_3"></div>
+    </div>
+  </div>
+  <div id="yonghu_4">
+    <span id="yonghu_hao_4"></span>
+    <span id="yonghuming_4"></span>
+    <span id="jiesuanfen_4"></span>
+    <div id="xiangqing_4">
+      <div id="xq4_1"></div>
+      <div id="xq4_2"></div>
+      <div id="xq4_3"></div>
+    </div>
+  </div>
+</div>
+<!--返回-->
+<div class="returnHome">
+  <a href="菜单.html"><img src="img/return.png" id="returnHome" href="菜单.html"></a>
+</div>
+<!--出牌按钮-->
+<div id="BottomChuPai">
+
+  <img src="img/chupai.png" class="chupai_bottom">
+</div>
+<!--<div id="bottomChuPai">-->
+<!--</div>-->
+<!--<bottom type = "bottom"></bottom>-->
+<div id="fourPokers">
+  <!--1号牌区-->
+  <div id="first_puke"></div>
+  <!--2号牌区-->
+  <div id="second_puke"></div>
+  <!--3号牌区-->
+  <div id="third_puke">
+  </div>
+  <!--4号牌区-->
+  <div id="forth_puke"></div>
+</div>
+<div id="chupai">
+  <div class="first_chupai_1"></div>
+  <div class="first_chupai_2"></div>
+  <div class="first_chupai_3"></div>
+  <div class="second_chupai_1"></div>
+  <div class="second_chupai_2"></div>
+  <div class="second_chupai_3"></div>
+  <div class="third_chupai_1"></div>
+  <div class="third_chupai_2"></div>
+  <div class="third_chupai_3"></div>
+  <div class="fourth_chupai_1"></div>
+  <div class="fourth_chupai_2"></div>
+  <div class="fourth_chupai_3"></div>
+</div>
+<!--<div id="touxiang_1">-->
+<!--  &lt;!&ndash;  <div id="name_1"></div>&ndash;&gt;-->
+<!--  <div class="name"></div>-->
+<!--</div>-->
+<!--<div id="touxiang_2">-->
+<!--  <div class="name"></div>-->
+<!--  &lt;!&ndash;  <div id="name_2"></div>&ndash;&gt;-->
+<!--</div>-->
+
+<!--<div id="touxiang_3">-->
+<!--  <div class="name"></div>-->
+<!--  &lt;!&ndash;  <div id="name_3"></div>&ndash;&gt;-->
+<!--</div>-->
+<!--<div id="touxiang_4">-->
+<!--  &lt;!&ndash;  <div id="name_4"></div>&ndash;&gt;-->
+<!--  <div class="name"></div>-->
+<!--</div>-->
+
+<script type="text/javascript">
+
+    var pokerBook = new Array();
+    pokerBook['$A'] = 1;
+    pokerBook['$2'] = 2;
+    pokerBook['$3'] = 3;
+    pokerBook['$4'] = 4;
+    pokerBook['$5'] = 5;
+    pokerBook['$6'] = 6;
+    pokerBook['$7'] = 7;
+    pokerBook['$8'] = 8;
+    pokerBook['$9'] = 9;
+    pokerBook['$10'] = 10;
+    pokerBook['$J'] = 11;
+    pokerBook['$Q'] = 12;
+    pokerBook['$K'] = 13;
+
+    pokerBook['&A'] = 14;
+    pokerBook['&2'] = 15;
+    pokerBook['&3'] = 16;
+    pokerBook['&4'] = 17;
+    pokerBook['&5'] = 18;
+    pokerBook['&6'] = 19;
+    pokerBook['&7'] = 20;
+    pokerBook['&8'] = 21;
+    pokerBook['&9'] = 22;
+    pokerBook['&10'] = 23;
+    pokerBook['&J'] = 24;
+    pokerBook['&Q'] = 25;
+    pokerBook['&K'] = 26;
+
+    pokerBook['*A'] = 27;
+    pokerBook['*2'] = 28;
+    pokerBook['*3'] = 29;
+    pokerBook['*4'] = 30;
+    pokerBook['*5'] = 31;
+    pokerBook['*6'] = 32;
+    pokerBook['*7'] = 33;
+    pokerBook['*8'] = 34;
+    pokerBook['*9'] = 35;
+    pokerBook['*10'] = 36;
+    pokerBook['*J'] = 37;
+    pokerBook['*Q'] = 38;
+    pokerBook['*K'] = 39;
+
+    pokerBook['#A'] = 40;
+    pokerBook['#2'] = 41;
+    pokerBook['#3'] = 42;
+    pokerBook['#4'] = 43;
+    pokerBook['#5'] = 44;
+    pokerBook['#6'] = 45;
+    pokerBook['#7'] = 46;
+    pokerBook['#8'] = 47;
+    pokerBook['#9'] = 48;
+    pokerBook['#10'] = 49;
+    pokerBook['#J'] = 50;
+    pokerBook['#Q'] = 51;
+    pokerBook['#K'] = 52;
+    // console.log(pokerBook);
+    // alert(pokerBook);
+    // ----------隐藏牌堆
+    function delPaidui() {
+        var del_temp = document.getElementById("paidui");
+        del_temp.style.display = "none";
+    }
+
+    // ----------显示牌堆
+    function showPaidui() {
+        var del_temp = document.getElementById("paidui");
+        del_temp.style.display = "block";
+    }
+
+    // 循环遍历将poker图片添加到数组中
+    var pokersList = [];//存放image对象
+    var pokerListShow = [];//备份image对象
+    // var flower = 0;
+    var zhanjiPoker_1 = [];
+    var zhanjiPoker_2 = [];
+    var zhanjiPoker_3 = [];
+    var zhanjiPoker_4 = [];
+
+    function imageToArray() {
+        var flower = 0;
+        var pokersList = [];
+        for (var i = 1; i <= 52; i++) {
+            var poker = new Image();
+            //设置图片的属性
+            poker.width = 100;
+            poker.height = 141;
+            poker.src = "img/puker/" + i + ".png"
+            poker.setAttribute("data-i", i - flower * 13); //保存扑克的值
+            poker.setAttribute("data-flower", flower); //保存扑克的花色
+            pokersList.push(poker);
+            if (i % 13 == 0) {
+                flower++
+            }
+        }
+        return pokersList;
+    }
+
+    //随机生成长度为52的数组 保存下标,0~51,对应于四个玩家的牌;
+    var pokerObjI = [];
+
+    function radomPoke() {
+        pokerObjI = [];
+        for (var i = 0; pokerObjI.length < 52; i++) {
+            var num = Math.floor(Math.random() * 52);//取整数
+            var isRepeat = false;
+            for (var item of pokerObjI) {
+                if (item == num) {
+                    isRepeat = true;
+                    break;
+                }
+            }
+            if (!isRepeat) {
+                pokerObjI.push(num);
+            }
+        }
+    }
+
+    // -----------------向所有牌堆中添加扑克-----------------
+    // 获取4个牌堆对象
+    var fourObj = document.getElementById('fourPokers').children;
+
+    // 创建全局变量 pokerNum 来保存以添加过的最后一个下标
+    var pokerNum = 0;
+
+    function startGame() {
+        pokersList = imageToArray();
+        // console.log(pokersList[pokerBook['#A']-1].src);
+        pokerListShow = imageToArray();
+        fourObj = document.getElementById('fourPokers').children;
+        pokerNum = 0;
+        // 向下方4个牌堆中分别保存13,13,13,13张扑克(共52张)
+        // 循环向牌堆中添加扑克
+        for (var i = 1; i <= 4; i++) {
+            for (var j = 1; j <= 13; j++) {
+                fourObj[i - 1].appendChild(pokersList[pokerObjI[pokerNum]]);
+                pokerNum++;
+            }
+        }
+    }
+
+    function delFourObjChild() {
+        for (var poke = 0; poke < 4; poke++) {
+            var poke_item = fourObj[poke].children;
+            for (var i = poke_item.length - 1; i >= 0; i--) {
+                fourObj[poke].removeChild(poke_item[i]);
+            }
+        }
+    }
+
+    function delFourObj() {
+        var temp_del = document.getElementById("fourPokers");
+        temp_del.style.display = "none";
+    }
+
+    function showFourObj() {
+        var temp_del = document.getElementById("fourPokers");
+        temp_del.style.display = "block";
+    }
+
+    // ----------------为4个牌堆添加层叠样式-----------------
+    // 自己的牌不用盖住
+    function coverPoker() {
+        for (var poke = 0; poke < 4; poke++) {
+            if (poke != 2) {
+                var poke_item = fourObj[poke].children;
+                for (var i = poke_item.length - 1; i >= 0; i--) {
+                    poke_item[i].src = "img/puker/01.png";
+                }
+            }
+        }
+    }
+
+    // 给扑克添加上边距 让他们分开
+    function addMargin() {
+        for (var item = 0; item < 4; item++) {
+            var items = fourObj[item].children;
+
+            if (items.length > 1) {
+                for (var i = 0; i < items.length; i++) {
+                    if (item == 0) {
+                        items[i].style.transform = "rotate(180deg)";
+                        items[i].style.position = "absolute";
+                        items[i].style.left = i * 40 + "px";
+                    } else if (item == 1) {
+                        items[i].style.transform = "rotate(90deg)";
+                        items[i].style.position = "absolute";
+                        items[i].style.top = i * 30 - 20 + "px";
+                        items[i].style.left = "20px";
+                    } else if (item == 2) {
+                        items[i].style.position = "absolute";
+                        items[i].style.left = i * 40 + "px";
+
+                    } else if (item == 3) {
+                        items[i].style.transform = "rotate(-90deg)";
+                        items[i].style.position = "absolute";
+                        items[i].style.bottom = i * 30 - 20 + "px";
+                        items[i].style.left = "20px";
+                    }
+                }
+            }
+        }
+    }
+
+    // 将扑克牌展示
+    function reveal() {
+        for (var poke = 0; poke < 4; poke++) {
+            var poke_item = fourObj[poke].children;
+            for (var i = poke_item.length - 1; i >= 0; i--) {
+                var temp_scr = parseInt(poke_item[i].getAttribute("data-i")) + 13 * parseInt(poke_item[i].getAttribute("data-flower"));
+                poke_item[i].src = "img/puker/" + temp_scr + ".png";
+            }
+        }
+    }
+
+    // 隐藏出牌按钮
+    function delChuPaiBottom() {
+        var temp_del = document.getElementById("BottomChuPai");
+        temp_del.style.display = "none";
+    }
+
+    //显示出牌按钮
+    function showChuPaiBottom() {
+        var temp_show = document.getElementById("BottomChuPai");
+        temp_show.style.display = "block";
+    }
+
+    // ----------------出牌
+    var chupaiObj = document.getElementById("chupai").children;
+
+    function chuPoker() {
+        var chupaiObj = document.getElementById("chupai").children;
+        var pokerCounter = 0;
+        // 循环向牌堆中添加扑克
+        for (var i = 1; i <= 12; i++) {
+            if (i % 3 == 1) {
+                for (var j = 1; j <= 3; j++) {
+                    chupaiObj[i - 1].appendChild(pokerListShow[pokerObjI[pokerCounter]]);
+                    pokerCounter++;
+                }
+            } else {
+                for (var j = 1; j <= 5; j++) {
+                    chupaiObj[i - 1].appendChild(pokerListShow[pokerObjI[pokerCounter]]);
+                    pokerCounter++;
+                }
+            }
+        }
+    }
+
+    // -------------扑克牌加上边距
+    function showPoker() {
+        for (var item = 0; item < 12; item++) {
+            var items = chupaiObj[item].children;
+            if (items.length > 1) {
+                for (var i = 0; i < items.length; i++) {
+                    if (item % 3 == 1) {
+                        items[i].style.position = "absolute";
+                        items[i].style.left = i * 40 + "px";
+                    } else {
+                        items[i].style.position = "absolute";
+                        items[i].style.left = i * 40 + "px";
+                    }
+                }
+            }
+        }
+    }
+
+    // ----------------战绩显示牌
+    function chuZhanji(zhanjiOBJ, card) {
+        var zhanjiList = imageToArray();
+        var pokerCounter = 0;
+        // 循环向牌堆中添加扑克
+        for (var i = 0; i < 13; i++) {
+            zhanjiOBJ.appendChild(zhanjiList[card[i] - 1]);
+        }
+        //加上边距，使牌分开
+        var items = zhanjiOBJ.children;
+        for (var i = 0; i < items.length; i++) {
+            items[i].style.position = "absolute";
+            items[i].style.left = i * 27.5 + "px";
+            items[i].style.height = "100px";
+            items[i].style.width = "auto";
+        }
+    }
+
+    //删除掉战绩里的牌
+    function delZhanjiObj(zhanjiOBJ) {
+        var tempNum = zhanjiOBJ.children.length;
+        for (var i = tempNum - 1; i >= 0; i--) {
+            zhanjiOBJ.removeChild(zhanjiOBJ.children[i]);
+        }
+    }
+
+    function delChupaiObjChild() {
+        var chupaiObj = document.getElementById("chupai").children;
+        for (var item = 0; item < 12; item++) {
+            var items = chupaiObj[item].children;
+            for (var i = items.length - 1; i >= 0; i--) {
+                chupaiObj[item].removeChild(items[i]);
+            }
+        }
+    }
+
+    function delChupaiObj() {
+        var temp_del = document.getElementById("chupai");
+        temp_del.style.display = "none";
+    }
+
+    function showChupaiObj() {
+        var temp_del = document.getElementById("chupai");
+        temp_del.style.display = "block";
+    }
+
+    function showPaiHangBang() {
+        var item = document.getElementById("paihangbang");
+        item.style.display = "block";
+    }
+
+    function delPaiHangBang() {
+        var item = document.getElementById("paihangbang");
+        item.style.display = "none";
+    }
+
+    // 结算显示牌
+    function jiesuan(jiesuanObj, card) {
+        var jsitems = jiesuanObj;
+        var jiesuanList = imageToArray();
+        var point = 0;
+        for (var i = 0; i < card.length; i++) {
+            if (i == 3 || i == 8)
+                point++;
+            jsitems[point].appendChild(jiesuanList[card[i] - 1]);
+        }
+        for (var k = 0; k < 3; k++) {
+            var items = jiesuanObj[k].children;
+            for (var item = 0; item < items.length; item++) {
+                items[item].style.position = "absolute";
+                items[item].style.left = item * 28 + "px";
+                items[item].style.height = "100px";
+                items[item].style.width = "auto";
+            }
+        }
+    }
+
+    //删除结算内容
+    function delJieSuan() {
+        document.getElementById("jschanghao").innerText = '';
+        for (var i = 1; i <= 4; i++) {
+            document.getElementById("yonghu_hao_" + i).innerText = '';
+            document.getElementById("yonghuming_" + i).innerText = '';
+            document.getElementById("jiesuanfen_" + i).innerText = '';
+            var jspoker = document.getElementById("xiangqing_" + i).children;
+            for (var k = 0; k < 3; k++) {
+                var items = jspoker[k].children;
+                for (var item = items.length - 1; item >= 0; item--) {
+                    jspoker[k].removeChild(items[item]);
+                }
+            }
+        }
+    }
+
+    // jiesuan();
+    function getXQ(id) {
+        var tokenTemp = getToken();
+        // console.log(tokenTemp);
+        //获取战局详情
+        var xmlHTTP = new XMLHttpRequest();
+        xmlHTTP.onreadystatechange = function () {
+            if (xmlHTTP.readyState == 4) {
+                var reSponse = xmlHTTP.response;
+                var json = JSON.parse(reSponse).data.detail;
+                // console.log(json);
+                // console.log(json.length);
+                if (json != '') {
+                    for (i = 1; i <= json.length; i++) {
+                        var pokerNum = [];
+                        var pokerCoun = 0;
+                        var temp_span = document.getElementById("yonghuming_" + i);
+                        temp_span.innerText = json[i - 1].name;
+                        var temp_span_2 = document.getElementById("yonghu_hao_" + i);
+                        temp_span_2.innerText = json[i - 1].player_id;
+                        document.getElementById("jiesuanfen_" + i).innerText = json[i - 1].score;
+                        for (j = 0; j < 3; j++) {
+                            var cardTemp = json[i - 1].card[j].split(' ');
+                            for (var k = 0; k < cardTemp.length; k++)
+                                pokerNum[pokerCoun++] = pokerBook[cardTemp[k]];
+                        }
+                        // console.log(pokerNum);
+                        jiesuan(document.getElementById('xiangqing_' + i).children, pokerNum);
+                    }
+                } else
+                    alert("获取详情失败，请重试！")
+            }
+        }
+        xmlHTTP.open("GET", 'https://api.shisanshui.rtxux.xyz/history/' + id, false);
+        xmlHTTP.setRequestHeader("X-Auth-Token", tokenTemp);
+        xmlHTTP.send();
+    }
+
+    function getToken() {
+        var tokenTemp = -1;
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function () {
+            if (xmlhttp.readyState == 4) {
+                var response = xmlhttp.response;
+                if (xmlhttp.status == 200) {
+                    if (JSON.parse(response).status == 0) {
+                        tokenTemp = JSON.parse(response).data.token;
+                    }
+                }
+            }
+        }
+        xmlhttp.open("POST", "https://api.shisanshui.rtxux.xyz/auth/login", false);
+        xmlhttp.setRequestHeader("Content-Type", "application/json");
+        xmlhttp.send('{"username":"123","password":"123"}');
+        return tokenTemp;
+    }
+
+    function getRankList() {
+        for (var i = 1; i <= 4; i++) {
+            document.getElementById("id_" + i).innerText = '';
+            document.getElementById("name_" + i).innerText = '';
+            document.getElementById("score_" + i).innerText = '';
+        }
+        var RankJson;
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function () {
+            if (xmlhttp.readyState == 4) {
+                var response = xmlhttp.response;
+                if (xmlhttp.status == 200) {
+                    RankJson = JSON.parse(response);
+                    console.log(RankJson[1]);
+                    console.log(RankJson[2]);
+                    console.log(RankJson[3]);
+                    console.log(RankJson[4]);
+                }
+            }
+        }
+        xmlhttp.open("GET", "https://api.shisanshui.rtxux.xyz/rank", false);
+        xmlhttp.send();
+        for (var i = 1; i <= 4; i++) {
+            document.getElementById("id_" + i).innerText = RankJson[i - 1].player_id;
+            document.getElementById("name_" + i).innerText = RankJson[i - 1].name;
+            document.getElementById("score_" + i).innerText = RankJson[i - 1].score;
+        }
+    }
+
+    document.getElementById("startgame").onclick = function () {
+        delChupaiObj();
+        showFourObj();
+        showChuPaiBottom();
+        delFourObjChild();
+        radomPoke();
+        delPaidui();
+        startGame();
+        coverPoker();
+        addMargin();
+    }
+    document.getElementById("paihangbang_bottom").onclick = function () {
+        getRankList();
+        showPaiHangBang();
+    }
+    document.getElementById("paihangbang_close").onclick = function () {
+        delPaiHangBang();
+    }
+    document.getElementById("BottomChuPai").onclick = function () {
+        delChupaiObjChild();
+        delFourObj();
+        chuPoker();
+        showPoker();
+        showChupaiObj();
+        delChuPaiBottom();
+        showPaidui();
+    }
+    document.getElementById("yonghuhao_close").onclick = function () {
+        document.getElementById("zhanjibang").style.display = "none";
+    }
+    document.getElementById("zhanji").onclick = function () {
+        document.getElementById("zhanjibang").style.display = "block"
+    }
+    document.getElementById("jiesuanclose").onclick = function () {
+        delJieSuan();
+        document.getElementById("jiesuan").style.display = "none";
+    }
+    document.getElementById("jilu_1").onclick = function () {
+        if (document.getElementById("changhao_1").innerText != '') {
+            document.getElementById("jschanghao").innerText = document.getElementById("changhao_1").innerText;
+            document.getElementById("jiesuan").style.display = 'block';
+            getXQ(document.getElementById("changhao_1").innerText);
+        } else
+            alert("无该场战局详情！");
+    }
+    document.getElementById("jilu_2").onclick = function () {
+        if (document.getElementById("changhao_2").innerText != '') {
+            document.getElementById("jschanghao").innerText = document.getElementById("changhao_2").innerText;
+
+            document.getElementById("jiesuan").style.display = 'block';
+            getXQ(document.getElementById("changhao_2").innerText);
+        } else
+            alert("无该场战局详情！");
+    }
+    document.getElementById("jilu_3").onclick = function () {
+        if (document.getElementById("changhao_3").innerText != '') {
+            document.getElementById("jschanghao").innerText = document.getElementById("changhao_3").innerText;
+
+            document.getElementById("jiesuan").style.display = 'block';
+            getXQ(document.getElementById("changhao_3").innerText);
+        } else
+            alert("无该场战局详情！");
+    }
+    document.getElementById("jilu_4").onclick = function () {
+        document.getElementById("jschanghao").innerText = document.getElementById("changhao_4").innerText;
+
+        if (document.getElementById("changhao_4").innerText != '') {
+            document.getElementById("jiesuan").style.display = 'block';
+            getXQ(document.getElementById("changhao_4").innerText);
+        } else
+            alert("无该场战局详情！");
+    }
+    document.getElementById("search").onclick = function () {
+        var tokenTemp = -1;
+        if (document.getElementById("yonghuhao").value != "") {
+            for (var num = 1; num <= 4; num++) {
+                delZhanjiObj(document.getElementById("zhanji_chupai_" + num));
+                document.getElementById("defen_" + num).innerText = '';
+                document.getElementById("changhao_" + num).innerText = '';
+            }
+            //获取token
+            tokenTemp = getToken();
+            //获取最近战绩
+            var xmlHTTP = new XMLHttpRequest();
+            xmlHTTP.onreadystatechange = function () {
+                if (xmlHTTP.readyState == 4) {
+                    var reSponse = xmlHTTP.response;
+                    var json = JSON.parse(reSponse).data;
+                    console.log(reSponse);
+                    if (json != '') {
+                        for (i = 1; i <= json.length; i++) {
+                            var pokerNum = [];
+                            var pokerCoun = 0;
+                            var temp_span = document.getElementById("defen_" + i);
+                            temp_span.innerText = json[i - 1].score;
+                            var temp_span_2 = document.getElementById("changhao_" + i);
+                            temp_span_2.innerText = json[i - 1].id;
+                            for (j = 0; j < 3; j++) {
+                                var cardTemp = json[i - 1].card[j].split(' ');
+                                for (var k = 0; k < cardTemp.length; k++)
+                                    pokerNum[pokerCoun++] = pokerBook[cardTemp[k]];
+                            }
+                            chuZhanji(document.getElementById("zhanji_chupai_" + i), pokerNum);
+                        }
+                    } else
+                        alert("此ID无最近战绩！")
+                }
+            }
+            var url = '?player_id=' + document.getElementById("yonghuhao").value + '&limit=4&page=1';//根据用户id设置请求url
+            xmlHTTP.open("GET", 'https://api.shisanshui.rtxux.xyz/history' + url, false);
+            xmlHTTP.setRequestHeader("X-Auth-Token", tokenTemp);
+            xmlHTTP.send();
+        } else {
+            alert("账号不能为空！")
+        }
+    }
+</script>
+</body>
+</html>
